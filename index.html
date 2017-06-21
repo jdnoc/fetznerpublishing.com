@@ -1,37 +1,46 @@
----
-layout: default
-title: Finding The Way Home
-cover: 'assets/images/cover1.jpg'
-class: 'home-template'
-navigation: True
-logo: 'assets/images/ghost.png'
-current: home
----
-<!-- < default -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Fetzner Publishing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-<!-- The big featured header  -->
-<header class="main-header {% if page.cover %}"
-        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
-        {% if page.navigation %}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {% endif %}
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">{{ site.description }}</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+		<!-- Header -->
+			<header id="header">
+				<h1>Fetzner Publishing</h1>
+				<p>Enter your email to be the first to know when a book is published!</p>
+			</header>
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
+		<!-- Signup Form -->
+			<form id="signup-form" action="https://docs.google.com/forms/d/e/1FAIpQLScslg3nNLEOTogpwnLaiCFC5TkhO9qrLyO3cLHxRjvRtk9REA/viewform?usp=sf_link">
+				<input type="submit" value="Sign Up" />
+			</form>
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
-    {% include loop.html %}
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://instagram.com/fetznerpublishing" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Fetzner Publishing</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
 
-</main>
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
